@@ -1,3 +1,4 @@
+/*============================ Universal code =====================*/
 a:hover {
   text-decoration: none;
 }
@@ -21,6 +22,25 @@ a:hover {
   position: static;
 }
 
+.head h2 {
+  font: 900 42px/50px "Lato", sans-serif;
+  color: #01285f;
+  position: relative;
+  margin-bottom: 90px;
+}
+.head h2:after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: #fe7058;
+  height: 6px;
+  width: 106px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: -24px;
+}
+
 /*============================ Header =====================*/
 .main-header {
   position: absolute;
@@ -38,6 +58,7 @@ a:hover {
   color: #fff;
 }
 
+/*============================ Banner Section =====================*/
 .banner {
   position: relative;
   padding-top: 164px;
@@ -99,4 +120,16 @@ a:hover {
   font: 900 70px "Lato", sans-serif;
   color: #d3011a;
   text-transform: uppercase;
+}
+
+/*============================ Banner bottom =====================*/
+.banner-botoom {
+  background: #f7f8fa;
+  padding-top: 88px;
+  padding-bottom: 100px;
+}
+.banner-botoom p {
+  font: 700 28px/48px "Lato", sans-serif;
+  color: #656565;
+  margin: 0;
 }

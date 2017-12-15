@@ -1,5 +1,8 @@
 $f:'Lato',
 sans-serif;
+
+/*============================ Universal code =====================*/
+
 a:hover {
     text-decoration: none;
 }
@@ -18,9 +21,32 @@ a:hover {
         z-index: 9999;
     }
 }
-.static{
+
+.static {
     position: static;
 }
+
+.head {
+    h2 {
+        font: 900 42px/50px $f;
+        color: #01285f;
+        position: relative;
+        margin-bottom: 90px;
+        &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            background: #fe7058;
+            height: 6px;
+            width: 106px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            bottom: -24px;
+        }
+    }
+}
+
 
 /*============================ Header =====================*/
 
@@ -39,7 +65,7 @@ a:hover {
         }
     }
 }
-
+/*============================ Banner Section =====================*/
 .banner {
     position: relative;
     padding-top: 164px;
@@ -57,7 +83,7 @@ a:hover {
         top: 0;
         left: 0;
     }
-    .container{
+    .container {
         position: relative;
         z-index: 2;
     }
@@ -91,10 +117,22 @@ a:hover {
         justify-content: center;
         align-items: center;
         margin-bottom: -50px;
-        a{
+        a {
             font: 900 70px $f;
             color: #d3011a;
             text-transform: uppercase;
         }
+    }
+}
+/*============================ Banner bottom =====================*/
+
+.banner-botoom{
+     background: #f7f8fa;
+    padding-top: 88px;
+    padding-bottom: 100px;
+    p{
+        font: 700 28px/48px $f;
+        color: #656565;
+        margin: 0;
     }
 }
