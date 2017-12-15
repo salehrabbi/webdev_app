@@ -42,6 +42,13 @@ a:hover {
   bottom: -24px;
 }
 
+.head-white h2 {
+  color: #fff;
+}
+.head-white h2:after {
+  background: #fff;
+}
+
 /*============================ Header =====================*/
 .main-header {
   position: absolute;
@@ -165,4 +172,26 @@ a:hover {
 .instruction .content p {
   font: 30px/36px "Lato", sans-serif;
   color: #676767;
+}
+
+/*============================ service section =====================*/
+.service {
+  background: url(../images/Background__1.svg);
+  background-size: cover;
+  padding-top: 75px;
+  padding-bottom: 20px;
+}
+.service .content {
+  color: #fff;
+  margin-bottom: 82px;
+}
+.service .content h3 {
+  margin: 0;
+  font: 700 30px/36px "Lato", sans-serif;
+  margin-bottom: 8px;
+  margin-top: 10px;
+}
+.service .content p {
+  margin: 0;
+  font: 25px/35px "Lato", sans-serif;
 }
