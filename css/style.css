@@ -195,3 +195,71 @@ a:hover {
   margin: 0;
   font: 25px/35px "Lato", sans-serif;
 }
+
+/*============================ footer section =====================*/
+.footer-top {
+  padding: 200px 0;
+}
+.footer-top h2 {
+  font: 900 42px "Lato", sans-serif;
+  color: #01285f;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+a.footer-logo {
+  height: 154px;
+  width: 154px;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  background: #d10119;
+  color: #fff;
+  border-radius: 30px;
+  font: 900 45px/154px "Lato", sans-serif;
+  text-transform: uppercase;
+}
+
+.main-footer {
+  border-top: 1px solid #d9d9d9;
+  padding: 25px 0;
+}
+
+.footer-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.footer-menu li {
+  float: left;
+  margin-right: 70px;
+}
+.footer-menu li:last-child {
+  margin-right: 0;
+}
+.footer-menu li a {
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #4d4d4d;
+}
+.footer-menu li a:hover {
+  text-decoration: underline;
+}
+
+.social-link {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+.social-link li {
+  float: left;
+  margin-left: 20px;
+}
+.social-link li:first-child {
+  margin-left: 0;
+}
+.social-link li a {
+  color: #4d4d4d;
+  font-size: 20px;
+}
