@@ -239,7 +239,7 @@ a.footer-logo {
 }
 .footer-menu li a {
   text-transform: uppercase;
-  font: 20px "Lato", sans-serif;
+  font: 20px/40px "Lato", sans-serif;
   color: #4d4d4d;
 }
 .footer-menu li a:hover {
@@ -261,5 +261,5 @@ a.footer-logo {
 }
 .social-link li a {
   color: #4d4d4d;
-  font-size: 20px;
+  font-size: 30px;
 }
