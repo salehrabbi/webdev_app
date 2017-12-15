@@ -1,0 +1,102 @@
+a:hover {
+  text-decoration: none;
+}
+
+.relative {
+  display: block;
+  position: relative;
+}
+.relative:after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+.static {
+  position: static;
+}
+
+/*============================ Header =====================*/
+.main-header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 41.5px 0;
+  z-index: 99999;
+}
+.main-header .logo {
+  font: 900 70px/81px "Lato", sans-serif;
+  text-transform: uppercase;
+}
+.main-header .logo a {
+  color: #fff;
+}
+
+.banner {
+  position: relative;
+  padding-top: 164px;
+  background: #f7f8fa;
+}
+.banner:after {
+  content: "";
+  background: url(../images/Background__1.svg) no-repeat;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 86%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 7.32vw), 0 100%);
+  background-size: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+.banner .container {
+  position: relative;
+  z-index: 2;
+}
+.banner .banner-text h1 {
+  font: 900 70px/84px "Lato", sans-serif;
+  color: #fff;
+}
+.banner .banner-text p {
+  font: 25px/35px "Lato", sans-serif;
+  letter-spacing: 0.02em;
+  color: #fff;
+  max-width: 590px;
+  margin-top: 30px;
+  margin-bottom: 35px;
+}
+.banner .banner-text .paystore-svg {
+  width: 296px;
+  padding-bottom: 100px;
+}
+.banner .mobile-bg {
+  background: url(../images/Mobile.svg);
+  background-size: 100% 100%;
+  min-width: 347px;
+  min-height: 606px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: -50px;
+}
+.banner .mobile-bg a {
+  font: 900 70px "Lato", sans-serif;
+  color: #d3011a;
+  text-transform: uppercase;
+}
