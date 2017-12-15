@@ -27,6 +27,7 @@ a:hover {
   color: #01285f;
   position: relative;
   margin-bottom: 90px;
+  margin-top: 20px;
 }
 .head h2:after {
   content: "";
@@ -132,4 +133,36 @@ a:hover {
   font: 700 28px/48px "Lato", sans-serif;
   color: #656565;
   margin: 0;
+}
+
+/*============================ instruction section =====================*/
+.instruction {
+  padding-top: 70px;
+}
+.instruction .head h2 {
+  margin-bottom: 112px;
+}
+.instruction .content {
+  margin-bottom: 97px;
+}
+.instruction .content .number {
+  height: 52px;
+  width: 52px;
+  line-height: 52px;
+  text-align: center;
+  border: 4px solid #00295f;
+  color: #fc151b;
+  font: 900 33px "Lato", sans-serif;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.instruction .content h3 {
+  font: 40px/48px "Lato", sans-serif;
+  color: #01285f;
+}
+.instruction .content p {
+  font: 30px/36px "Lato", sans-serif;
+  color: #676767;
 }
