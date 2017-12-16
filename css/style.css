@@ -105,7 +105,8 @@ a:hover {
   max-width: 296px;
   padding-bottom: 100px;
 }
-.banner .mobile-bg {
+
+.mobile-bg {
   background: url(../images/Mobile.svg);
   background-size: 100% 100%;
   min-width: 347px;
@@ -124,7 +125,7 @@ a:hover {
           align-items: center;
   margin-bottom: -50px;
 }
-.banner .mobile-bg a {
+.mobile-bg a {
   font: 900 70px "Lato", sans-serif;
   color: #d3011a;
   text-transform: uppercase;
@@ -275,14 +276,19 @@ a.footer-logo {
   display: block;
   background: #d10119;
   color: #fff;
-  font: 47px "Lato", sans-serif;
-  padding: 40px 0;
+  font: 24px "Lato", sans-serif;
+  padding: 18px 0;
   position: fixed;
   z-index: 99999;
   bottom: 0;
   left: 0;
   width: 100%;
   text-align: center;
+}
+
+.mobile-bg-phone {
+  display: none;
+  min-width: auto;
 }
 
 /*============================ Media query =====================*/
@@ -315,7 +321,7 @@ a.footer-logo {
     font: 23px/35px "Lato", sans-serif;
   }
 }
-/*============================ Size (Tab/Notebook) =====================*/
+/*============================ Big phone =====================*/
 @media (max-width: 767px) {
   .banner .mobile-bg {
     display: none;
@@ -336,5 +342,162 @@ a.footer-logo {
 
   .footer-fixed {
     display: block;
+  }
+
+  .main-header {
+    padding: 15px 0;
+  }
+
+  .main-header .logo {
+    font: 900 46px "Lato", sans-serif;
+  }
+
+  .banner .banner-text h1 {
+    font: 900 45px "Lato", sans-serif;
+  }
+
+  .banner {
+    padding-top: 120px;
+  }
+
+  .banner .banner-text p {
+    font: 22px/30px "Lato", sans-serif;
+    margin-top: 20px;
+  }
+
+  .banner .banner-text .paystore-svg {
+    max-width: 210px;
+  }
+
+  .mobile-bg-phone {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: static;
+    margin-bottom: 0;
+    margin: 100px 0;
+  }
+
+  .banner-botoom p {
+    font: 700 20px/30px "Lato", sans-serif;
+  }
+
+  .banner-botoom {
+    padding-top: 57px;
+    padding-bottom: 68px;
+  }
+
+  .head h2 {
+    margin-bottom: 65px;
+  }
+
+  .instruction .embed-1 {
+    max-width: 150px !important;
+  }
+  .instruction .embed-2,
+  .instruction .embed-3 {
+    max-width: 230px !important;
+  }
+
+  .instruction .content h3 {
+    font: 30px/48px "Lato", sans-serif;
+  }
+
+  .instruction .content p {
+    font: 23px/30px "Lato", sans-serif;
+  }
+
+  .instruction .content {
+    margin-bottom: 60px;
+  }
+
+  .service .content p {
+    font: 22px/35px "Lato", sans-serif;
+    max-width: 290px;
+    margin: 0 auto;
+  }
+
+  .service .content {
+    margin-bottom: 40px;
+  }
+
+  .instruction {
+    padding-top: 27px;
+  }
+
+  .service {
+    padding-top: 25px;
+    padding-bottom: 36px;
+    background: url(../images/Mobile_Background.svg);
+    background-size: cover;
+  }
+
+  .footer-top {
+    padding: 100px 0;
+  }
+
+  .footer-top h2 {
+    font: 900 30px "Lato", sans-serif;
+    margin-bottom: 30px;
+  }
+
+  .footer-top .paystore-svg embed {
+    width: 180px;
+  }
+
+  .footer-menu li {
+    display: block;
+    float: none;
+    margin: 0;
+  }
+
+  .main-footer {
+    border-color: transparent;
+    background: #f7f8fa;
+    padding-top: 50px;
+    margin-bottom: 66px;
+  }
+
+  .social-link {
+    float: none;
+    text-align: center;
+    border-top: 1px solid #d9d9d9;
+    margin-top: 15px;
+    padding-top: 17px;
+  }
+
+  .social-link li {
+    float: none;
+    display: inline-block;
+  }
+}
+/*============================ small phone =====================*/
+@media (max-width: 575px) {
+  .banner .banner-text h1 {
+    font: 900 29px "Lato", sans-serif;
+  }
+
+  .banner .banner-text p {
+    font: 17px/30px "Lato", sans-serif;
+  }
+
+  .mobile-bg-phone {
+    margin: 50px 0;
+  }
+
+  .head h2 {
+    font: 900 35px/50px "Lato", sans-serif;
+  }
+
+  .banner-botoom p {
+    font: 18px/24px "Lato", sans-serif;
+  }
+
+  .instruction .content p {
+    font: 21px/30px "Lato", sans-serif;
+  }
+
+  .banner .banner-text .paystore-svg {
+    padding-bottom: 68px;
   }
 }
