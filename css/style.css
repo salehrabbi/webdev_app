@@ -298,8 +298,16 @@ a.footer-logo {
     display: none;
   }
 
+  .banner-text br {
+    display: block;
+  }
+
   .footer-menu li {
     margin-right: 67px;
+  }
+
+  .banner .banner-text h1 {
+    font: 900 58px/71px "Lato", sans-serif;
   }
 }
 /*============================ Size 768px(Tab/Notebook) =====================*/
@@ -314,11 +322,15 @@ a.footer-logo {
   }
 
   .banner .banner-text h1 {
-    font: 900 48px/56px "Lato", sans-serif;
+    font: 900 46px/56px "Lato", sans-serif;
   }
 
   .banner .banner-text p {
     font: 23px/35px "Lato", sans-serif;
+  }
+
+  .footer-menu li {
+    margin-right: 30px;
   }
 }
 /*============================ Big phone =====================*/
