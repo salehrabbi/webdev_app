@@ -114,7 +114,7 @@ a:hover {
             margin-bottom: (50px - 15);
         }
         .paystore-svg {
-            width: 296px;
+            max-width: 296px;
             padding-bottom: 100px;
         }
     }
@@ -182,6 +182,8 @@ a:hover {
         p {
             font: 30px/36px $f;
             color: #676767;
+            max-width: 505px;
+            margin: 0 auto;
         }
     }
 }
@@ -235,7 +237,7 @@ a.footer-logo {
     font: 900 45px/154px $f;
     text-transform: uppercase;
 }
-
+/*============================ main footer section =====================*/
 .main-footer {
     border-top: 1px solid #d9d9d9;
     padding: 25px 0;
@@ -270,12 +272,77 @@ a.footer-logo {
     li {
         float: left;
         margin-left: 20px;
-        &:first-child{
+        &:first-child {
             margin-left: 0;
         }
         a {
             color: #4d4d4d;
             font-size: 30px;
         }
+    }
+}
+/*============================ Fixed footer section =====================*/
+.footer-fixed{
+    display: none;
+    a{
+        display: block;
+        background: #d10119;
+        color: #fff;
+        font: 47px $f;
+        padding: 40px 0;
+        position: fixed;
+        z-index: 99999;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+    } 
+}
+
+
+/*============================ Media query =====================*/
+
+/*============================ Size 992px(Medium Monitor) =====================*/
+@media (max-width:1199px) {
+    br {
+        display: none;
+    }
+    .footer-menu li {
+        margin-right: 67px;
+    }
+}
+/*============================ Size 768px(Tab/Notebook) =====================*/
+@media (min-width:768px) and (max-width:991px) {
+    .banner .mobile-bg {
+        min-width: 259px;
+        margin-bottom: -143px;
+    }
+    .banner .mobile-bg a {
+        font: 900 57px "Lato", sans-serif;
+    }
+    .banner .banner-text h1 {
+        font: 900 48px/56px "Lato", sans-serif;
+    }
+    .banner .banner-text p {
+        font: 23px/35px "Lato", sans-serif;
+    }
+}
+/*============================ Size (Tab/Notebook) =====================*/
+@media (max-width:767px) {
+    .banner .mobile-bg {
+        display: none;
+    }
+    .banner::after {
+        clip-path: unset;
+    }
+    .main-header{
+        position: fixed;
+        background: #fff;
+        .logo a{
+            color: #d10119;
+        }
+    }
+    .footer-fixed{
+        display: block;
     }
 }
