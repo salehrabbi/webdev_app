@@ -136,6 +136,7 @@ a:hover {
   background: #f7f8fa;
   padding-top: 88px;
   padding-bottom: 100px;
+  margin-top: -1px;
 }
 .banner-botoom p {
   font: 700 28px/48px "Lato", sans-serif;
